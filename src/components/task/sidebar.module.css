@@ -1,0 +1,17 @@
+.outer {
+  display: flex;
+  /* flex-direction: column; */
+}
+.child {
+  margin-left: 5%;
+}
+@media screen and (max-width: 768px) {
+  .outer {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+  }
+  .child {
+    margin-top: 70px;
+  }
+}

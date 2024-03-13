@@ -1,0 +1,137 @@
+.outer {
+  display: flex;
+  gap: 3%;
+  /* background-color: aqua; */
+}
+.img {
+  width: 25%;
+  height: 580px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  /* background-image: url(https://img.freepik.com/premium-photo/old-alarm-clock-blue-background_392895-250012.jpg); */
+}
+.label,
+.subtask .label {
+  margin: 4% 0% 4% 0%;
+  font-size: small;
+  color: var(--color-input-label);
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.input {
+  width: 25rem;
+  height: 3rem;
+  margin: 1% 0%;
+  /* width: 100%;
+  height: 10%; */
+}
+/* .subtask .input {
+  width: 210%;
+} */
+.textarea {
+  width: 25rem;
+  height: 5rem;
+  /* width: 100%;
+  height: 20%;
+  margin: 1% 0%; */
+}
+.button {
+  width: 9rem;
+  height: 3rem;
+  margin: 4% 0%;
+  border-radius: 25px;
+  background-color: aliceblue;
+}
+.option > select {
+  width: 100px;
+  height: 20px;
+  margin: 5% 0%;
+}
+.option {
+  display: flex;
+  justify-content: space-around;
+  gap: 10%;
+  margin-top: 3%;
+}
+.subtask {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.5%;
+  gap: 0.4rem;
+}
+.subTaskClass {
+  padding: 3% 5%;
+  margin: 8% 5% 8% 2%;
+  list-style: none;
+  line-height: 2rem;
+  border: 1px solid;
+}
+.subTaskClass li {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.subTaskClass button {
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #025f5fc1;
+  padding: 2%;
+}
+.show {
+  position: absolute;
+  cursor: pointer;
+  top: 35%;
+  right: 30px;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  font-size: 38px;
+}
+@media screen and (max-width: 768px) {
+  .img {
+    width: 40%;
+    height: 70px;
+    margin: 1% auto;
+  }
+  .outer {
+    margin: 6%;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin-right: 2%;
+    gap: 1rem;
+  }
+  .input {
+    width: 18rem;
+    height: 2.2rem;
+    margin: 1% 0%;
+    margin-top: 10%;
+  }
+  .textarea {
+    width: 18rem;
+    height: 5rem;
+    margin: 1% 0%;
+  }
+  .option {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    margin-left: 40%;
+    margin-top: 10%;
+  }
+  .button {
+    margin: 10% auto;
+  }
+  .show {
+    top: 740px;
+    font-size: 28px;
+  }
+}
